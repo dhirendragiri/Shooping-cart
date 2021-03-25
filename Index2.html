@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<style type ="text/css">
+  #logo
+  {float:left;
+    margin:5px}
+
+
+</style>
+<title>Shooping Cart</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<meta charset="utf-8"/>
+<title> Style By Your Passion</title>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="checkout.js"></script>
+<script src="addToCart.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="Style.css">
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-style">
+            
+    <div class="container">
+        <div class="navbar-header">
+            <button type ="button" class="navbar-toggle" data-toggle="collapse" data-target="#icon">
+                <span class ="icon-bar"></span>
+                <span class ="icon-bar"></span>
+                <span class ="icon-bar"></span>
+
+                </button>
+        <a href=""><img class="logo" src ="logo.png" style="height:70px; width: 70px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="icon">
+        <ul class ="nav navbar-nav navbar-right">
+            <li><a href="">Home </a></li>
+            <li><a href="">About Us </a></li>
+            <li><a href="">Contact Us </a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="">Help </a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+<section id="bannerImages">
+
+
+<div class="item">
+    <img src="boots.jpg" style="width:100%;height:150px;" >
+    <!-- <label id="name" value="Winter Boots">Winter Boots</label> -->
+    <input style="width:100%;height:25px; color: black;" id="name1" value="Winter Boots" readonly/>
+    <!-- <p name="name" value="Winter Boots">Winter Boots</p> -->
+    <input style="width:100%;height:25px; color: black;" id="price1" value="99.99" readonly/>
+    <!-- <p name="price" value="$99.99">$99.99</p> -->
+
+    
+        <input type="button" onclick="decrementValue()" value="-" />
+        <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+        <input type="button" onclick="incrementValue()" value="+" />
+        
+
+    <button type="button" class="btn btn-info " onclick="onFormSubmit1()">ADD TO CART</button>
+</div>
+
+<div  class="item">
+
+    <img src="lofers.jpg" style="width:100%;height:150px;" >
+    <input style="width:100%;height:25px; color: black;" id="name2" value="Galamours Lofers" readonly/>
+    <input style="width:100%;height:25px; color: black;" id="price2" value="149.99" readonly/>
+   
+    <input type="button" onclick="decrementValue()" value="-" />
+    <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+    <input type="button" onclick="incrementValue()" value="+" />
+    <button type="submit" class="btn btn-info " onclick="onFormSubmit2()">ADD TO CART</button>
+  
+</div>
+
+<div  class="item">
+    <img src="nike.jpg" style="width:100%;height:150px;" >
+    <input style="width:100%;height:25px; color: black;" id="name3" value="Nike shoes" readonly/>
+    <input style="width:100%;height:25px; color: black;" id="price3" value="59.99" readonly/>
+    
+    <input type="button" onclick="decrementValue()" value="-" />
+    <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+    <input type="button" onclick="incrementValue()" value="+" />
+    <button type="button" class="btn btn-info " onclick="onFormSubmit3()">ADD TO CART</button>
+</div>
+
+<div  class="item">
+    <img src="shoes.jpg" style="width:100%;height:150px;" >
+    <input style="width:100%;height:25px; color: black;" id="name4" value="Shades Collection" readonly/>
+    <input style="width:100%;height:25px; color: black;" id="price4" value="109.99" readonly/>
+    
+    <input type="button" onclick="decrementValue()" value="-" />
+    <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+    <input type="button" onclick="incrementValue()" value="+" />
+    <button type="button" class="btn btn-info " onclick="onFormSubmit4()">ADD TO CART</button>
+</div>
+
+
+</section>
+
+<button type="button" class="btn btn-info " >CART</button>
+
+<table id="cart" class="table " style="width: 25px;">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
